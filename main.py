@@ -1,5 +1,5 @@
 """----------------------------------------------------------------
-Name:       your name
+Name:       Kaleb Cousineau
 Assignment: Lab - Baby Shark
 Course:     CS 1430, Section X, Fall 2026
 Purpose:    This program is designed to be practice for Python
@@ -24,30 +24,16 @@ Output: The sound Baby Shark, with three verses:
 ##############
 REPEAT = 3
 
+def sing_verse(name):
+    for _ in range(REPEAT):
+        print(f"{name} Shark,")
+        print("doo-doo-doo-do-do-do-do")
+    print(f"{name} Shark!")
 
 def main():
-    print("Baby Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Baby Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Baby Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Baby Shark!")
-    print("Mommy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Mommy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Mommy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Mommy Shark!")
-    print("Daddy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Daddy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Daddy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Daddy Shark!")
-
+    sing_verse("Baby")
+    sing_verse("Mommy")
+    sing_verse("Daddy")
 
 if __name__ == "__main__":
     main()
